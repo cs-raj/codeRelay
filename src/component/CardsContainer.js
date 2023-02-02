@@ -1,6 +1,7 @@
 class CardsContainer{
     constructor(teamData){
         this.teamData=teamData;
+        this.isMounted=false;
     }
     render(){
 
@@ -25,4 +26,20 @@ class CardsContainer{
 
         return cardsContainer;
     }
+    
+    mount(el){
+        if (this.isMounted) return
+        if(el){
+            el.appendChild(this.render());
+            this.isMounted = true;
+            return;
+        }
+        document.body.appendChild(this.render());
+        this.isMounted = true;
+        return;
+    }
+    
 }
+
+
+export {CardsContainer}
