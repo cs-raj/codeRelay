@@ -1,3 +1,5 @@
+import { CardComponent } from "./CardComponent.js";
+
 class CardsContainer{
     constructor(teamData){
         this.teamData=teamData;
@@ -23,6 +25,10 @@ class CardsContainer{
         teamHeading.appendChild(h1Text);
         teamHeading.appendChild(h2Text);
         cardsContainer.appendChild(cards);
+        this.teamData.forEach(element => {
+            const c1 = new CardComponent(element);
+            c1.mount(cards);
+        });
 
         return cardsContainer;
     }

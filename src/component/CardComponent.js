@@ -63,3 +63,5 @@ class CardComponent{
         return;
     }
 }
+
+export { CardComponent };
