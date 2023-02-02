@@ -34,7 +34,7 @@ class CardComponent{
         cardLink.href = profileLink;
         cardLink.innerText = "Know more";
         cardLink.target = "_blank";
-        cardImage.src = profileImage;
+        cardImage.src = "https://vikasrangaswamy.github.io/Contentstack/"+profileImage; ;
         cardImage.alt = name;
 
 
