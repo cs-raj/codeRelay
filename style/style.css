@@ -1,3 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --background-primary: #ffffff;
+    --background-secondary: #e9f3f5;
+    --text-primary: #28324a;
+    --text-invert: #ffffff;
+    --accent-primary: #f46524;
+    --accent-secondary: #28324a;
+    --heading-1: 3rem;
+    --heading-2: 1.5rem;
+    --paragraph: 1.2rem;
+    scroll-behavior: smooth;
+    scroll-snap-type: y proximity;
+}
+
+body {
+    background-color: var(--background-primary);
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Cards starts here */
 .team {
     text-align: center;
@@ -65,16 +93,6 @@
     text-decoration: none;
 }
 
-.card-icons {
-    display: none;
-    margin-top: 10px;
-    font-size: 1.7rem;
-}
-
-.card-icons i{
-    color: rgb(106, 12, 247);
-}
-
 @media screen and (max-width:957px) {
     .card-icons,.card-content,.card-header{
         display: none;
@@ -120,3 +138,4 @@
 }
 
 /* cards upto here */
+
